@@ -7,7 +7,7 @@ import time
 import os
 
 # ================= CONFIG =================
-TOKEN = "48fd2f4a545bdf71eff988b2b83c56237c1f3f5ba67f164de47d2a2edd174816"
+TOKEN = "SEU_TOKEN_AQUI"
 BASE_URL = "https://api.tiny.com.br/api2/"
 HEADERS = {"Content-Type": "application/x-www-form-urlencoded"}
 OUTPUT_FILE = "Base.xlsx"
@@ -134,3 +134,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
