@@ -48,6 +48,7 @@ Aplicação com **interface gráfica em Tkinter**, voltada para uso diário por 
 📂 Código localizado em:
 
 automacao_1/
+
 Rodar em modo desenvolvimento:
 ```bash
 python automacao_1/main.py
@@ -74,6 +75,7 @@ Versão sem interface gráfica, ideal para:
 📂 Código localizado em:
 
 automacao_2/
+
 Rodar em modo desenvolvimento:
 ```bash
 python automacao_2/headless_tiny.py
