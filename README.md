@@ -99,7 +99,7 @@ pyinstaller --onefile --windowed `
   --add-data "automacao_1\icon.ico;." `
   automacao_1\main.py
 ```
-### CMD
+CMD
 ```bash
 pyinstaller --onefile --windowed ^
   --icon automacao_1\icon.ico ^
