@@ -80,6 +80,7 @@ python automacao_2/headless_tiny.py
 ```
 
 📦 Geração do executável (.exe)
+
 O projeto não versiona arquivos .exe, mas o README explica como gerar localmente.
 
 ### Requisitos
