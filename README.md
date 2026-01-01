@@ -116,16 +116,6 @@ pyinstaller --onefile --windowed `
 📌 O executável final será gerado na pasta:
 dist/
 
-🔐 Segurança
-⚠️ Nunca versionar o token do Tiny ERP.
-
-Recomenda-se utilizar variável de ambiente:
-
-```bash
-$env:TINY_TOKEN="seu_token_aqui"
-```
-O código lê automaticamente essa variável durante a execução.
-
 🧰 Stack utilizada
 - Python 3.10+
 - requests
