@@ -114,8 +114,10 @@ pyinstaller --onefile --windowed `
   automacao_2/headless_tiny.py
 ```
 📌 O executável final será gerado na pasta:
-dist/
 
+```bash
+dist/
+```
 🧰 Stack utilizada
 - Python 3.10+
 - requests
