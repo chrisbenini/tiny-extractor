@@ -4,8 +4,10 @@
 
 **Aplicação em Python para automação de extração de dados do Tiny ERP**,  
 
-- 🖥️ **Interface gráfica (Desktop App)**
-- ⚙️ **Modo headless (background / servidor / agendador)**
+🖥️ **Interface gráfica (Desktop App)**
+
+⚙️ **Modo headless (background / servidor / agendador)**
+
 Projeto focado em **automação para varejo**, resolvendo tarefas que normalmente são manuais, lentas e repetitivas.
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
