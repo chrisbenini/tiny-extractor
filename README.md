@@ -7,7 +7,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/python-3.10%2B-blue?logo=python">
-  <img src="https://img.shields.io/badge/desktop-app-Tkinter-informational">
+  <img alt="desktop" src="https://img.shields.io/badge/Desktop%20App-Tkinter-informational?style=flat-square">
   <img src="https://img.shields.io/badge/ERP-Tiny-orange">
   <img src="https://img.shields.io/badge/status-Projeto%20Real-success">
 </p>
