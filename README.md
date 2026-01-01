@@ -1,27 +1,25 @@
-<div align="center">
+<h1 align="center">🖥️ Tiny Extractor — Extração de Produtos (Tiny ERP)</h1>
 
-# 🖥️ Tiny Extractor — Extração de Produtos (Tiny ERP)
+<p align="center">
+  Aplicação em Python para automação da extração de dados de produtos do Tiny ERP,
+  com suporte a interface gráfica (Desktop) e execução em segundo plano (Headless).
+</p>
 
-**Aplicação em Python para automação de extração de dados do Tiny ERP**,  
+<p align="center">
+  <img src="https://img.shields.io/badge/python-3.10%2B-blue?logo=python">
+  <img src="https://img.shields.io/badge/desktop-app-Tkinter-informational">
+  <img src="https://img.shields.io/badge/ERP-Tiny-orange">
+  <img src="https://img.shields.io/badge/status-Projeto%20Real-success">
+</p>
 
-🖥️ **Interface gráfica (Desktop App)**
-
-⚙️ **Modo headless (background / servidor / agendador)**
-
-Projeto focado em **automação para varejo**, resolvendo tarefas que normalmente são manuais, lentas e repetitivas.
-
-![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
-![Desktop App](https://img.shields.io/badge/Desktop%20App-Tkinter-blueviolet)
-![Automation](https://img.shields.io/badge/Automation-Varejo-success)
-![ERP](https://img.shields.io/badge/ERP-Tiny-orange)
-
-</div>
-
----
+---  
 
 ## 🎯 Objetivo do projeto
 
-Automatizar a extração de dados de produtos do Tiny ERP, gerando uma base estruturada em Excel com informações como:
+Automatizar a extração de dados de produtos do **Tiny ERP**, eliminando processos manuais,
+lentos e sujeitos a erro, e entregando uma **base estruturada em Excel** pronta para análise.
+
+### Dados extraídos:
 
 - Código
 - Nome do produto
@@ -32,28 +30,28 @@ Automatizar a extração de dados de produtos do Tiny ERP, gerando uma base estr
 - Marca
 - Peso líquido
 
-O projeto foi pensado para atender **dois cenários reais**:
-- Usuário final (desktop)
-- Servidores, VMs e rotinas agendadas
+O projeto foi pensado para **uso real em ambiente corporativo**, atendendo tanto usuários finais quanto servidores.
 
 ---
 
-## 🖥️ Modo 1 — Aplicação Desktop (GUI)
+### 🧠 Visão geral da solução
 
-Aplicação com **interface gráfica em Tkinter**, voltada para uso diário por usuários.
+O Tiny Extractor possui **dois modos de operação**, atendendo diferentes cenários:
 
-### Funcionalidades
+### 🖥️ Modo 1 — Aplicação Desktop (GUI)
+Interface gráfica simples e intuitiva para uso diário.
 
-- Interface gráfica simples e intuitiva
+**Funcionalidades:**
+- Interface amigável (Tkinter)
 - Execução em segundo plano via **System Tray**
 - Controles de execução:
-  - ▶️ Iniciar
-  - ⏸️ Pausar
-  - ▶️ Continuar
+  - ▶ Iniciar
+  - ⏸ Pausar
+  - ▶ Continuar
   - ❌ Cancelar
 - Feedback visual de progresso (páginas e total de produtos)
 - Exportação automática para Excel (`.xlsx`)
-
+  
 📂 Código localizado em:
 
 automacao_1/
@@ -67,7 +65,7 @@ python automacao_1/main.py
 
 Versão sem interface gráfica, ideal para:
 - Servidores
-- Máquinas virtuais
+- Máquinas virtuais (VMs)
 - Agendador de Tarefas do Windows
 - Execuções automáticas
 
@@ -92,14 +90,14 @@ python automacao_2/headless_tiny.py
 
 📦 Geração do executável (.exe)
 
-O projeto não versiona arquivos .exe, mas o README explica como gerar localmente.
+O projeto não versiona arquivos .exe, mas o processo de geração está documentado.
 
 ### Requisitos
 ```bash
 pip install pyinstaller
 ```
 
-🖥️ Gerar .exe da versão com interface gráfica
+🔹 Versão Desktop (GUI)
 
 ## PowerShell
 ```bash
@@ -115,15 +113,14 @@ pyinstaller --onefile --windowed ^
   --add-data "automacao_1\icon.ico;." ^
   automacao_1\main.py
 ```
-⚙️ Gerar .exe da versão headless (background)
+🔹 Versão Headless (Background)
 ```bash
 pyinstaller --onefile --windowed `
   --icon automacao_2\icon.ico `
   --add-data "automacao_2\icon.ico;." `
   automacao_2/headless_tiny.py
 ```
-📌 O executável final será gerado na pasta:
-
+📁 O executável final será gerado na pasta:
 ```bash
 dist/
 ```
@@ -137,12 +134,12 @@ dist/
 - Pillow
 - PyInstaller
 
-💡 Contexto de uso real
+🏢 Contexto de uso real
 
-Este projeto foi desenvolvido com foco em automação de rotinas no varejo, reduzindo tarefas manuais e garantindo:
+Projeto desenvolvido com foco em automação de rotinas no varejo, resultando em:
 - Padronização dos dados
-- Ganho de tempo
-- Menos erros operacionais
+- Redução de erros operacionais
+- Ganho significativo de tempo
 - Facilidade de uso por usuários não técnicos
 
 📌 Observação final
