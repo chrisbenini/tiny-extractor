@@ -68,6 +68,7 @@ Versão sem interface gráfica, ideal para:
 - Geração do Excel mesmo em caso de cancelamento
 
 📂 Código localizado em:
+
 automacao_2/
 Rodar em modo desenvolvimento:
 python automacao_2/headless_tiny.py
@@ -79,19 +80,23 @@ O projeto não versiona arquivos .exe, mas o README explica como gerar localment
 pip install pyinstaller
 
 🖥️ Gerar .exe da versão com interface gráfica
+
 ### PowerShell
+
 pyinstaller --onefile --windowed `
   --icon automacao_1\icon.ico `
   --add-data "automacao_1\icon.ico;." `
   automacao_1\main.py
 
 ### CMD
+
 pyinstaller --onefile --windowed ^
   --icon automacao_1\icon.ico ^
   --add-data "automacao_1\icon.ico;." ^
   automacao_1\main.py
 
 ⚙️ Gerar .exe da versão headless (background)
+
 pyinstaller --onefile --windowed `
   --icon automacao_2\icon.ico `
   --add-data "automacao_2\icon.ico;." `
