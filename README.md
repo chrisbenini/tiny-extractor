@@ -88,6 +88,29 @@ Rodar em modo desenvolvimento:
 python automacao_2/headless_tiny.py
 ```
 
+🧾 Dependências do projeto
+
+Adicione esta seção:
+
+## 📦 Dependências
+
+As dependências do projeto estão listadas no arquivo `requirements.txt`.
+
+Para instalar todas de uma vez:
+
+```bash
+pip install -r requirements.txt
+```
+Principais bibliotecas utilizadas:
+
+- requests – Comunicação com a API do Tiny ERP
+- pandas – Manipulação e estruturação dos dados
+- openpyxl – Geração de planilhas Excel
+- Tkinter – Interface gráfica (Desktop)
+- pystray – Integração com System Tray
+- Pillow – Manipulação de imagens (ícones)
+- PyInstaller – Geração de executável (.exe)
+
 📦 Geração do executável (.exe)
 
 O projeto não versiona arquivos .exe, mas o processo de geração está documentado.
@@ -124,6 +147,15 @@ pyinstaller --onefile --windowed `
 ```bash
 dist/
 ```
+## 🚫 Arquivos ignorados (.gitignore)
+
+O projeto utiliza um arquivo `.gitignore` para evitar versionar arquivos desnecessários, como:
+
+- Ambientes virtuais (`.venv/`)
+- Arquivos temporários do Python (`__pycache__/`)
+- Builds e executáveis gerados (`dist/`, `build/`, `.exe`)
+- Arquivos de saída (Excel, logs)
+
 🧰 Stack utilizada
 - Python 3.10+
 - requests
