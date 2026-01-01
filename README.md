@@ -75,37 +75,41 @@ Versão sem interface gráfica, ideal para:
 
 automacao_2/
 Rodar em modo desenvolvimento:
+```bash
 python automacao_2/headless_tiny.py
+```
 
 📦 Geração do executável (.exe)
 O projeto não versiona arquivos .exe, mas o README explica como gerar localmente.
 
 ### Requisitos
+```bash
 pip install pyinstaller
+```
 
 🖥️ Gerar .exe da versão com interface gráfica
 
 ### PowerShell
-
+```bash
 pyinstaller --onefile --windowed `
   --icon automacao_1\icon.ico `
   --add-data "automacao_1\icon.ico;." `
   automacao_1\main.py
-
+```
 ### CMD
-
+```bash
 pyinstaller --onefile --windowed ^
   --icon automacao_1\icon.ico ^
   --add-data "automacao_1\icon.ico;." ^
   automacao_1\main.py
-
+```
 ⚙️ Gerar .exe da versão headless (background)
-
+```bash
 pyinstaller --onefile --windowed `
   --icon automacao_2\icon.ico `
   --add-data "automacao_2\icon.ico;." `
   automacao_2/headless_tiny.py
-  
+```
 📌 O executável final será gerado na pasta:
 dist/
 
@@ -113,7 +117,10 @@ dist/
 ⚠️ Nunca versionar o token do Tiny ERP.
 
 Recomenda-se utilizar variável de ambiente:
+
+```bash
 $env:TINY_TOKEN="seu_token_aqui"
+```
 O código lê automaticamente essa variável durante a execução.
 
 🧰 Stack utilizada
