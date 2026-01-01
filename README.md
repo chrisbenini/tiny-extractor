@@ -34,6 +34,7 @@ O projeto foi pensado para atender **dois cenários reais**:
 Aplicação com **interface gráfica em Tkinter**, voltada para uso diário por usuários.
 
 ### Funcionalidades
+
 - Interface gráfica simples e intuitiva
 - Execução em segundo plano via **System Tray**
 - Controles de execução:
@@ -45,6 +46,7 @@ Aplicação com **interface gráfica em Tkinter**, voltada para uso diário por 
 - Exportação automática para Excel (`.xlsx`)
 
 📂 Código localizado em:
+
 automacao_1/
 Rodar em modo desenvolvimento:
 ```bash
@@ -52,6 +54,7 @@ python automacao_1/main.py
 ```
 
 ⚙️ Modo 2 — Headless (Background / Servidor)
+
 Versão sem interface gráfica, ideal para:
 - Servidores
 - Máquinas virtuais
@@ -59,6 +62,7 @@ Versão sem interface gráfica, ideal para:
 - Execuções automáticas
 
 ### Características
+
 - Nenhuma janela é exibida
 - Aplicação roda diretamente em segundo plano
 - Ícone aparece apenas no System Tray
@@ -107,6 +111,7 @@ dist/
 
 🔐 Segurança
 ⚠️ Nunca versionar o token do Tiny ERP.
+
 Recomenda-se utilizar variável de ambiente:
 $env:TINY_TOKEN="seu_token_aqui"
 O código lê automaticamente essa variável durante a execução.
@@ -122,6 +127,7 @@ O código lê automaticamente essa variável durante a execução.
 - PyInstaller
 
 💡 Contexto de uso real
+
 Este projeto foi desenvolvido com foco em automação de rotinas no varejo, reduzindo tarefas manuais e garantindo:
 - Padronização dos dados
 - Ganho de tempo
@@ -129,6 +135,7 @@ Este projeto foi desenvolvido com foco em automação de rotinas no varejo, redu
 - Facilidade de uso por usuários não técnicos
 
 📌 Observação final
+
 O Tiny Extractor foi pensado como um projeto de produto, não apenas como script:
 - Interface para usuário final
 - Versão técnica para servidores
