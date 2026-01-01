@@ -92,14 +92,14 @@ pip install pyinstaller
 
 🖥️ Gerar .exe da versão com interface gráfica
 
-### PowerShell
+## PowerShell
 ```bash
 pyinstaller --onefile --windowed `
   --icon automacao_1\icon.ico `
   --add-data "automacao_1\icon.ico;." `
   automacao_1\main.py
 ```
-CMD
+## CMD
 ```bash
 pyinstaller --onefile --windowed ^
   --icon automacao_1\icon.ico ^
