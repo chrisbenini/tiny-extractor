@@ -1,11 +1,19 @@
-# 🖥️ Tiny Extractor (Python)
+<div align="center">
 
-Aplicação em Python para **extração de produtos do Tiny ERP**, com duas formas de execução:
+# 🖥️ Tiny Extractor — Extração de Produtos (Tiny ERP)
+
+**Aplicação em Python para automação de extração de dados do Tiny ERP**,  
 
 - 🖥️ **Interface gráfica (Desktop App)**
 - ⚙️ **Modo headless (background / servidor / agendador)**
-
 Projeto focado em **automação para varejo**, resolvendo tarefas que normalmente são manuais, lentas e repetitivas.
+
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+![Desktop App](https://img.shields.io/badge/Desktop%20App-Tkinter-blueviolet)
+![Automation](https://img.shields.io/badge/Automation-Varejo-success)
+![ERP](https://img.shields.io/badge/ERP-Tiny-orange)
+
+</div>
 
 ---
 
@@ -16,7 +24,6 @@ Automatizar a extração de dados de produtos do Tiny ERP, gerando uma base estr
 - Código
 - Nome do produto
 - Preço
-- Estoque
 - Preço de custo
 - Preço de custo médio
 - GTIN
