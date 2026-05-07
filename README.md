@@ -1,183 +1,103 @@
-<h1 align="center">🖥️ Tiny Extractor — Extração de Produtos (Tiny ERP)</h1>
+<h1 align="center">🖥️ Tiny Extractor</h1>
 
 <p align="center">
-  Aplicação em Python para automação da extração de dados de produtos do Tiny ERP,
-  com suporte a interface gráfica (Desktop) e execução em segundo plano (Headless).
+Automação em Python para extração de produtos do Tiny ERP
+com geração automática de base estruturada em Excel.
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/python-3.10%2B-blue?logo=python">
-  <img alt="desktop" src="https://img.shields.io/badge/Desktop%20App-Tkinter-informational?style=flat-square">
-  <img src="https://img.shields.io/badge/ERP-Tiny-orange">
-  <img src="https://img.shields.io/badge/status-Projeto%20Real-success">
+  <img src="https://img.shields.io/badge/REAL_PROJECT-AUTOMATION-22C55E?style=for-the-badge">
+  <img src="https://img.shields.io/badge/DESKTOP_APP-TKINTER-0EA5E9?style=for-the-badge">
+  <img src="https://img.shields.io/badge/BACKGROUND-HEADLESS-6366F1?style=for-the-badge">
 </p>
-
----  
-
-## 🎯 Objetivo do projeto
-
-Automatizar a extração de dados de produtos do **Tiny ERP**, eliminando processos manuais,
-lentos e sujeitos a erro, e entregando uma **base estruturada em Excel** pronta para análise.
-
-### Dados extraídos:
-
-- Código
-- Nome do produto
-- Preço
-- Preço de custo
-- Preço de custo médio
-- GTIN
-- Marca
-- Peso líquido
-
-O projeto foi pensado para **uso real em ambiente corporativo**, atendendo tanto usuários finais quanto servidores.
 
 ---
 
-### 🧠 Visão geral da solução
+## ⚡ Overview
 
-O Tiny Extractor possui **dois modos de operação**, atendendo diferentes cenários:
+✔ Extração automática via API Tiny ERP  
+✔ Exportação direta para Excel (.xlsx)  
+✔ Execução Desktop ou Servidor  
+✔ Automação corporativa real  
 
-### 🖥️ Modo 1 — Aplicação Desktop (GUI)
-Interface gráfica simples e intuitiva para uso diário.
+---
 
-**Funcionalidades:**
-- Interface amigável (Tkinter)
-- Execução em segundo plano via **System Tray**
-- Controles de execução:
-  - ▶ Iniciar
-  - ⏸ Pausar
-  - ▶ Continuar
-  - ❌ Cancelar
-- Feedback visual de progresso (páginas e total de produtos)
-- Exportação automática para Excel (`.xlsx`)
-  
-📂 Código localizado em:
+## 🧠 Execution Modes
 
-automacao_1/
+Desktop GUI
 
-Rodar em modo desenvolvimento:
-```bash
 python automacao_1/main.py
-```
 
-⚙️ Modo 2 — Headless (Background / Servidor)
 
-Versão sem interface gráfica, ideal para:
-- Servidores
-- Máquinas virtuais (VMs)
-- Agendador de Tarefas do Windows
-- Execuções automáticas
+Headless Mode
 
-### Características
-
-- Nenhuma janela é exibida
-- Aplicação roda diretamente em segundo plano
-- Ícone aparece apenas no System Tray
-- Menu de contexto:
-  - ❌ Cancelar execução
-  - ❌ Encerrar aplicação
-- Geração do Excel mesmo em caso de cancelamento
-
-📂 Código localizado em:
-
-automacao_2/
-
-Rodar em modo desenvolvimento:
-```bash
 python automacao_2/headless_tiny.py
-```
 
-🧾 Dependências do projeto
 
-Adicione esta seção:
+---
 
-## 📦 Dependências
+## 🧰 Tech Stack
 
-As dependências do projeto estão listadas no arquivo `requirements.txt`.
+<p align="center">
 
-Para instalar todas de uma vez:
+<img src="https://skillicons.dev/icons?i=python" height="45"/>
+<img src="https://skillicons.dev/icons?i=git" height="45"/>
+<img src="https://skillicons.dev/icons?i=github" height="45"/>
 
-```bash
+</p>
+
+<p align="center">
+
+<img src="https://img.shields.io/badge/API_Integration-Requests-111827?style=flat-square">
+<img src="https://img.shields.io/badge/Data_Processing-Pandas-150458?style=flat-square">
+<img src="https://img.shields.io/badge/Excel_Automation-OpenPyXL-217346?style=flat-square">
+<img src="https://img.shields.io/badge/Desktop_UI-Tkinter-0EA5E9?style=flat-square">
+<img src="https://img.shields.io/badge/System_Tray-PyStray-9333EA?style=flat-square">
+<img src="https://img.shields.io/badge/Executable-PyInstaller-F97316?style=flat-square">
+
+</p>
+
+---
+
+## 📦 Setup
+
+
 pip install -r requirements.txt
-```
-Principais bibliotecas utilizadas:
 
-- requests – Comunicação com a API do Tiny ERP
-- pandas – Manipulação e estruturação dos dados
-- openpyxl – Geração de planilhas Excel
-- Tkinter – Interface gráfica (Desktop)
-- pystray – Integração com System Tray
-- Pillow – Manipulação de imagens (ícones)
-- PyInstaller – Geração de executável (.exe)
 
-📦 Geração do executável (.exe)
+Build executável:
 
-O projeto não versiona arquivos .exe, mas o processo de geração está documentado.
 
-### Requisitos
-```bash
-pip install pyinstaller
-```
+pyinstaller --onefile automacao_1/main.py
 
-🔹 Versão Desktop (GUI)
 
-## PowerShell
-```bash
-pyinstaller --onefile --windowed `
-  --icon automacao_1\icon.ico `
-  --add-data "automacao_1\icon.ico;." `
-  automacao_1\main.py
-```
-## CMD
-```bash
-pyinstaller --onefile --windowed ^
-  --icon automacao_1\icon.ico ^
-  --add-data "automacao_1\icon.ico;." ^
-  automacao_1\main.py
-```
-🔹 Versão Headless (Background)
-```bash
-pyinstaller --onefile --windowed `
-  --icon automacao_2\icon.ico `
-  --add-data "automacao_2\icon.ico;." `
-  automacao_2/headless_tiny.py
-```
-📁 O executável final será gerado na pasta:
-```bash
-dist/
-```
-## 🚫 Arquivos ignorados (.gitignore)
+---
 
-O projeto utiliza um arquivo `.gitignore` para evitar versionar arquivos desnecessários, como:
+## 🎯 Business Impact
 
-- Ambientes virtuais (`.venv/`)
-- Arquivos temporários do Python (`__pycache__/`)
-- Builds e executáveis gerados (`dist/`, `build/`, `.exe`)
-- Arquivos de saída (Excel, logs)
+• Elimina processos manuais  
+• Padroniza dados do ERP  
+• Reduz erros operacionais  
+• Automatiza rotina empresarial  
 
-🧰 Stack utilizada
-- Python 3.10+
-- requests
-- pandas
-- openpyxl
-- Tkinter
-- pystray
-- Pillow
-- PyInstaller
+---
 
-🏢 Contexto de uso real
+## 👨‍💻 Author
 
-Projeto desenvolvido com foco em automação de rotinas no varejo, resultando em:
-- Padronização dos dados
-- Redução de erros operacionais
-- Ganho significativo de tempo
-- Facilidade de uso por usuários não técnicos
+<p align="center">
 
-📌 Observação final
+<a href="https://github.com/chrisbenini">
+<img src="https://img.shields.io/badge/GitHub-chrisbenini-181717?style=for-the-badge&logo=github&logoColor=white">
+</a>
 
-O Tiny Extractor foi pensado como um projeto de produto, não apenas como script:
-- Interface para usuário final
-- Versão técnica para servidores
-- Código organizado e reutilizável
-- Documentação clara para reprodução
+<a href="https://www.linkedin.com/in/christopher-benini-081b7833a/">
+<img src="https://img.shields.io/badge/LinkedIn-Christopher_Benini-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white">
+</a>
+
+</p>
+
+---
+
+<p align="center">
+⭐ If you liked this project, consider giving a Star.
+</p>
