@@ -62,15 +62,15 @@ python automacao_2/headless_tiny.py
 
 ## 📦 Setup
 
-
+```Sql
 pip install -r requirements.txt
-
+```
 
 Build executável:
 
-
+```sql
 pyinstaller --onefile automacao_1/main.py
-
+```
 
 ---
 
