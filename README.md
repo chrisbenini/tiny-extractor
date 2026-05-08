@@ -1,9 +1,10 @@
-<h1 align="center">🖥️ Tiny Extractor</h1>
-
 <p align="center">
-Automação em Python para extração de produtos do Tiny ERP
-com geração automática de base estruturada em Excel.
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=240&color=0:0A192F,30:1E3A8A,65:3776AB,100:FFD43B&text=Tiny%20Extractor&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=Python%20Automation%20%7C%20Tiny%20ERP%20%7C%20Excel%20Integration&descAlignY=60&descSize=18&descColor=E6EDF3&animation=twinkling" />
 </p>
+
+<h3 align="center">
+🖥️ Automação para extração de produtos do Tiny ERP com geração automática em Excel
+</h3>
 
 <p align="center">
   <img src="https://img.shields.io/badge/REAL_PROJECT-AUTOMATION-22C55E?style=for-the-badge">
