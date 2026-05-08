@@ -27,13 +27,15 @@
 
 Desktop GUI
 
+```sql
 python automacao_1/main.py
-
+```
 
 Headless Mode
-
+sql
+```
 python automacao_2/headless_tiny.py
-
+```
 
 ---
 
